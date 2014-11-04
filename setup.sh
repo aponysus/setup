@@ -11,7 +11,7 @@ if [ -d ./dotfiles/ ]; then
     mv dotfiles dotfiles.old
 fi
 
-git clone git@github.com:aponysus/dotfiles.git
+git clone https://github.com/aponysus/dotfiles.git
 ln -sb dotfiles/.screenrc .
 ln -sb dotfiles/.bashrc .
 ln -sf dotfiles/.vimrc ~/.vim/
