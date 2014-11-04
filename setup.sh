@@ -4,6 +4,7 @@
 sudo apt-get install -y git
 sudo apt-get install -y curl
 sudo apt-get install -y vim
+sudo apt-get install -y screen
 
 # git pull and install dotfiles as well
 cd $HOME
@@ -11,6 +12,11 @@ if [ -d ./dotfiles/ ]; then
     mv dotfiles dotfiles.old
 fi
 
+if [ -d ./.vim/ ]; then
+    mv .vim old_vimfiles
+if
+
+mkdir -p .vim
 git clone https://github.com/aponysus/dotfiles.git
 ln -sb dotfiles/.screenrc .
 ln -sb dotfiles/.bashrc .
