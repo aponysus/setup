@@ -14,7 +14,7 @@ fi
 
 if [ -d ./.vim/ ]; then
     mv .vim old_vimfiles
-if
+fi
 
 mkdir -p .vim
 git clone https://github.com/aponysus/dotfiles.git
